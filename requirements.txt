@@ -5,3 +5,6 @@ langchain-groq
 python-dotenv
 pandas
 langchain-ollama
+langchain-community
+langchain-pinecone
+sentence-transformers

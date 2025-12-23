@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatGroq(model= "llama-3.3-70b-versatile", temperature=0.8)
+llm = ChatGroq(model= "llama-3.3-70b-versatile", temperature=0)
 
 def get_restaurant_review(question: str, retriever : str ):
     template = """

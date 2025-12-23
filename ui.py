@@ -1,6 +1,7 @@
 import streamlit as st
 from model import get_restaurant_review
-from vector_chroma import get_documents, create_vector_store, get_retriever
+#from vector_chroma import get_documents, create_vector_store, get_retriever
+from vector_pinecone import *
 
 st.set_page_config("Restaurant Review Agent", layout='centered')
 st.title("Restaurant Review Agent")
