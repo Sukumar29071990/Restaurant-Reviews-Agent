@@ -1,9 +1,10 @@
 from langchain_groq.chat_models import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
-
-
+from config import Config
 load_dotenv()
+
+GROQ_API_KEY = Config.GROQ_API_KEY
 
 llm = ChatGroq(model= "llama-3.3-70b-versatile", temperature=0)
 

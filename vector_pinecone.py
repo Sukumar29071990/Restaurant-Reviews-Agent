@@ -6,10 +6,11 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from dotenv import load_dotenv
 import pandas as pd
 import os
+from config import Config
 
 load_dotenv()
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+PINECONE_API_KEY = Config.PINECONE_API_KEY
 
 index_name = "restaurant-reviews"
 
